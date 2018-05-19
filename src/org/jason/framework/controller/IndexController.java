@@ -66,7 +66,6 @@ public class IndexController extends Controller {
 	}
 	
 	public void demo1(){
-		System.out.println("demo1=================================================++++++");
 		render("view/system/html/demo1.html");
 	}
 	
@@ -79,7 +78,6 @@ public class IndexController extends Controller {
 		System.out.println(list);
 		HashMap<String,List<Record>> hash = new HashMap<String,List<Record>>();
 		hash.put("paramType",list);
-		
 		renderJson(hash);
 	}
 
